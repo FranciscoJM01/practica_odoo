@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Toma el formulario de Contactos que ya existe... -->
+    <record id="view_partner_form_mi_practica" model="ir.ui.view">
+        <field name="name">res.partner.form.mi_practica</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <!-- ...y muestra el campo nuevo debajo del RTN/NIF -->
+            <field name="vat" position="after">
+                <field name="cumpleanos"/>
+            </field>
+        </field>
+    </record>
+</odoo>
