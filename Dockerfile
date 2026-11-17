@@ -5,4 +5,4 @@ RUN chown -R odoo:odoo /mnt/extra-addons
 USER odoo
 ENV PGSSLMODE=require
 EXPOSE 10000
-CMD ["sh", "-c", "odoo --http-port=${PORT:-10000} --db_host=$HOST --db_port=5432 --db_user=$USER --db_password=$PASSWORD -d neondb -i base,practica --without-demo=all --workers=0 --limit-memory-soft=400000000 --limit-memory-hard=512000000 --addons-path=/usr/lib/python3/dist-packages/odoo/addons,/mnt/extra-addons --proxy-mode --db-filter=^neondb$"]
+CMD ["sh", "-c", "odoo --http-port=${PORT:-10000} --db_host=$HOST --db_port=5432 --db_user=$USER --db_password=$PASSWORD -d neondb -i practica --without-demo=all --workers=0 --max-cron-threads=0 --addons-path=/usr/lib/python3/dist-packages/odoo/addons,/mnt/extra-addons --proxy-mode --db-filter=^neondb$"]
