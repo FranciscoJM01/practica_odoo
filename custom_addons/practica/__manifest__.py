@@ -1,7 +1,7 @@
 {
-    'name': 'Mi PrÃ¡ctica',
+    'name': 'Mi PrÃƒÂ¡ctica',
     'version': '18.0.1.0.0',
-    'summary': 'PrÃ¡ctica: agregar un campo al mÃ³dulo de Contactos',
+    'summary': 'PrÃƒÂ¡ctica: agregar un campo al mÃƒÂ³dulo de Contactos',
     'author': 'Luk',
     'license': 'LGPL-3',
     'depends': ['contacts'],
